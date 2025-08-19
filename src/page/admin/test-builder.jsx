@@ -400,7 +400,7 @@ export default function TestBuilderPage() {
       if (response.data.success) {
         // Redirect to tests list after successful save
         setTimeout(() => {
-          router("/admin");
+          router("/admin/test");
         }, 1500);
       }
     } catch (error) {
@@ -454,7 +454,7 @@ export default function TestBuilderPage() {
 
       // Redirect to tests list after successful publish
       setTimeout(() => {
-        router("/admin");
+        router("/admin/test");
       }, 1500);
     } catch (error) {
       console.error("Error publishing test:", error);
