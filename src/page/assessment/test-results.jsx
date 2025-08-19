@@ -23,7 +23,7 @@ const TestResults = () => {
     <div className="min-h-screen bg-background">
       <Header />
 
-      <div className="min-h-[calc(100vh-80px)] flex flex-col items-center justify-center bg-neutral-50 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 p-4">
+      <div className="min-h-[calc(100vh-80px)] flex flex-col items-center justify-center text-neutral-900 dark:text-neutral-100 p-4">
         <Card className="max-w-md w-full p-8 bg-white dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 shadow-md">
           <div className="flex flex-col items-center text-center">
             <div className="h-16 w-16 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mb-6">
@@ -55,7 +55,7 @@ const TestResults = () => {
         </Card>
 
         <p className="mt-6 text-sm text-muted-foreground">
-          If you have any questions, please contact the Manager.
+          If you have any questions, please contact the Staff.
         </p>
       </div>
     </div>

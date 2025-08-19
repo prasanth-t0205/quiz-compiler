@@ -23,13 +23,13 @@ const App = () => {
         {/* Public routes */}
         <Route path="/" element={<Home />} />
         <Route path="/test-results" element={<ResultPage />} />
-        <Route 
-          path="/test-results/:testId" 
+        <Route
+          path="/test-results/:testId"
           element={
             <ProtectedRoute allowedRoles={["user", "staff", "admin"]}>
               <TestResultDetail />
             </ProtectedRoute>
-          } 
+          }
         />
 
         <Route
@@ -67,7 +67,7 @@ const App = () => {
           }
         />
         <Route
-          path="/test-results/:id"
+          path="/test-result/:id"
           element={
             <ProtectedRoute allowedRoles={["user", "staff", "admin"]}>
               <TestResults />

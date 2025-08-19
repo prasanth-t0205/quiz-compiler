@@ -390,7 +390,7 @@ export default function AssessmentExamPage() {
         ([questionId, answer]) => ({
           questionId: parseInt(questionId),
           answer: answer.values || answer.value,
-          timeSpent: 0, // You can track this if needed
+          timeSpent: 0,
         })
       );
 
@@ -413,7 +413,7 @@ export default function AssessmentExamPage() {
         exitFullscreen();
 
         // Navigate to results page with the result data
-        navigate(`/test-results/${testId}`, {
+        navigate(`/test-result/${testId}`, {
           state: { result: response.data.result },
         });
       } else {
